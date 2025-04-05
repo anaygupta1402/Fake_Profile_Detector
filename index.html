@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Profile Detector</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+
+    <!-- LOGO AND MENU'S  -->
+     <header>
+        <div class="logo_container">
+            <a href="#"><img class="logo_img" src="img1.png" alt="Fake Profile"></a>
+        </div>
+        <nav class="nav_bar">
+            <!-- <a href="#home">Home</a> -->
+            <a href="#project-overview">Project Overview</a>
+            <!-- <a href="#">Profile Detection</a> -->
+            <a href="#teams">Teams</a>
+        </nav>
+        <a href="LOGIN/login.html">
+            <img src="login.png" alt="Login Logo" class="login-logo">
+        </a>
+     </header>
+    
+
+      <!-- MAIN CONTENT -->
+
+     <main>       
+           
+        <!-- Project Overview Section -->
+        <div class="project_overview" id="project-overview">
+            <h1>Project Overview: Fake Profile Detection System</h1>
+            
+            <div class="image-container">
+                <img src="https://wp.technologyreview.com/wp-content/uploads/2020/03/fakebookprofile-web-copy-3.jpg" alt="Fake Profile Detection" />
+            </div>
+
+            <h2>Introduction</h2>
+            <p>Fake profiles on social media are used for scams, misinformation, and online fraud. Detecting them is crucial to maintaining a secure online environment. This project aims to develop an AI-based system to identify and eliminate fake profiles using machine learning, NLP, and image recognition.</p>
+            
+        
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>Profile Analysis:</strong> Detects fake usernames, missing details, and stolen images.</li>
+                <li><strong>Behavioral Analysis:</strong> Identifies unusual posting patterns and automated activities.</li>
+                <li><strong>Content Analysis:</strong> Flags spammy posts, fake comments, and malicious links.</li>
+                <li><strong>Network Analysis:</strong> Detects bot clusters and fake engagement.</li>
+            </ul>
+            <h2>Technologies Used</h2>
+            <ul>
+                <li><strong>Machine Learning:</strong> Decision Trees, Random Forest, Deep Learning.</li>
+                <li><strong>NLP:</strong> Sentiment analysis, text classification, spam detection.</li>
+                <li><strong>Image Recognition:</strong> Reverse image search, deepfake detection.</li>
+                <li><strong>Graph-Based Analysis:</strong> Identifying fake account clusters.</li>
+            </ul>
+            <h2>Implementation Steps</h2>
+            <ol>
+                <li><strong>Data Collection & Preprocessing:</strong> Gather real and fake profiles, clean data.</li>
+                <li><strong>Feature Engineering:</strong> Extract profile, behavior, and network-based features.</li>
+                <li><strong>Model Training:</strong> Train ML models for classification.</li>
+                <li><strong>Real-Time Detection:</strong> Deploy system for continuous monitoring.</li>
+            </ol>
+            <h2>Challenges & Solutions</h2>
+            <ul>
+                <li><strong>Evolving Fake Profiles:</strong> Adaptive AI models improve detection.</li>
+                <li><strong>Data Privacy:</strong> Secure data handling and encryption.</li>
+                <li><strong>Balancing Accuracy:</strong> Hybrid AI approach reduces false positives.</li>
+            </ul>
+            <!-- <h2>Future Enhancements</h2>
+            <ul>
+                <li>Blockchain-based Identity Verification</li>
+                <li>Deepfake Detection for Profile Pictures</li>
+                <li>Real-time Analytics for Social Media Platforms</li>
+            </ul> -->
+        </div>
+
+        <div class="team_container" id="teams">
+            <h1>OUR TEAM !!</h1>
+        </div>
+
+        <!-- TEAM MEMBERS  -->
+        <div class="team_member_container">
+            <div class="anay">
+                <img src="anay.jpg" alt="Team Member"> 
+                <h3>Anay Gupta</h3>
+            </div>    
+            <div class="aditi">
+                <img src="Aditi.jpg" alt="Team Member"> 
+                <h3>Aditi Mishra</h3>
+            </div>    
+            <div class="manshi">
+                <img src="Manshi.jpg" alt="Team Member"> 
+                <h3>Manshi</h3>
+            </div>    
+        </div>
+       
+     </main>
+     
+     <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+
+</body>
+</html>
